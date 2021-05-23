@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="no_network_connectivity">Internet connection not found</string>
+    <string name="menu_home_page">Homepage</string>
+    <string name="menu_characters">Characters</string>
+    <string name="menu_episodes">Episodes</string>
+    <string name="menu_locations">Locations</string>
+    <string name="error_occurred">Error occurred</string>
+    <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/menu_home_page">
+
+    <fragment
+        android:id="@+id/menu_home_page"
+        android:name="com.merveylcu.rickandmorty.ui.homepage.HomePageFragment"
+        android:label="HomePageFragment" />
+    <fragment
+        android:id="@+id/menu_characters"
+        android:name="com.merveylcu.rickandmorty.ui.character.CharactersFragment"
+        android:label="CharactersFragment">
+        <action
+            android:id="@+id/action_menu_character_to_character_detail_fragment"
+            app:destination="@+id/characterDetailFragment"
+            app:popUpTo="@+id/characterDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_episodes"
+        android:name="com.merveylcu.rickandmorty.ui.episode.EpisodesFragment"
+        android:label="EpisodesFragment" />
+    <fragment
+        android:id="@+id/menu_locations"
+        android:name="com.merveylcu.rickandmorty.ui.location.LocationsFragment"
+        android:label="LocationsFragment" />
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.merveylcu.rickandmorty.ui.character.detail.CharacterDetailFragment"
+        android:label="CharacterDetailFragment">
+        <argument
+            android:name="characterId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>
